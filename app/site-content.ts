@@ -152,7 +152,7 @@ export const defaultMainSections: MainSection[] = [
 ];
 
 export type SiteContent = {
-  schemaVersion: number;
+  schemaVersion: string;
   analytics: {
     enabled: boolean;
     provider: "umami";

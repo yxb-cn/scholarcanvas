@@ -1,6 +1,6 @@
 import { defaultMainSections } from "./site-content";
 
-export const currentContentSchemaVersion = 1;
+export const currentContentSchemaVersion = "1.0";
 
 export type ValidationIssue = {
   level: "error" | "warning";
@@ -76,7 +76,7 @@ export function migrateSiteContent<T extends UnknownRecord>(content: T) {
   };
 
   next.schemaVersion = currentContentSchemaVersion;
-  return next as T & { schemaVersion: number };
+  return next as T & { schemaVersion: string };
 }
 
 function validWebUrl(value: string) {
