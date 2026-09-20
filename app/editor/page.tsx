@@ -140,6 +140,7 @@ const fieldLabels: Record<string, string> = {
   corresponding: "Corresponding Author",
   venue: "Journal / Conference",
   note: "Status / Note",
+  presentations: "Presentations (optional — one conference or seminar per line)",
   bibtex: "BibTeX (optional — journal, volume, issue, and pages)",
   abstract:
     "Abstract (supports Markdown and LaTeX: **bold**, *italic*, $...$, $$...$$)",
@@ -192,6 +193,7 @@ const addLabels: Record<string, string> = {
 };
 
 const longTextFields = new Set([
+  "presentations",
   "bio",
   "text",
   "details",
@@ -221,6 +223,7 @@ const arrayTemplates: Record<string, JsonValue> = {
     authors: [{ name: "", self: false, corresponding: false }],
     venue: "",
     note: "",
+    presentations: "",
     bibtex: "",
     abstract: "",
     links: [{ label: "", url: "" }],
@@ -464,6 +467,7 @@ function publicationFromBibtex(entry: BibtexImportEntry): JsonObject {
     })),
     venue: entry.venue,
     note: entry.note,
+    presentations: "",
     bibtex: entry.raw,
     abstract: entry.abstract,
     links: [],
