@@ -202,6 +202,7 @@ export type SiteContent = {
     period: string;
     degree: string;
     institution: string;
+    department?: string;
     details: string;
   }>;
   researchTopics: Array<{

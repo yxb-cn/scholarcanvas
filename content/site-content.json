@@ -223,19 +223,22 @@
     {
       "period": "2024 - Present",
       "degree": "Ph.D. in Economics",
-      "institution": "Department of Economics, Example University",
-      "details": "Advisor: Prof. Jordan Lee. Fields: econometrics, finance, and machine learning."
+      "institution": "Example University",
+      "department": "Department of Economics",
+      "details": "Advisor: Prof. Jordan Lee.\nFields: econometrics, finance, and machine learning."
     },
     {
       "period": "2022 - 2024",
       "degree": "M.Sc. in Economics",
       "institution": "Example Institute of Social Science",
+      "department": "",
       "details": "Thesis: Forecasting with high-dimensional macroeconomic data."
     },
     {
       "period": "2018 - 2022",
       "degree": "Bachelor's Degree in Economics",
       "institution": "Example College",
+      "department": "",
       "details": "Graduated with honors."
     }
   ],
